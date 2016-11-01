@@ -72,7 +72,7 @@ public class FirstPanel extends JPanel
 	
 	private void colorRandomClicked(){
 		
-		Color randomColor = new Color(rand.nextInt(255)+1, rand.nextInt()+1, rand.nextInt()+1);
+		Color randomColor = new Color(rand.nextInt(256), rand.nextInt(256), rand.nextInt(256));
 		this.setBackground(randomColor);
 		
 	}
