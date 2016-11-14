@@ -8,13 +8,17 @@ import javax.swing.JFrame;
 
 public class FirstFrame extends JFrame
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private GraphicsController controller;
 	private FirstPanel windowPanel;
 
 	public FirstFrame(GraphicsController controller)
 	{
 		super();
-		this.controller = controller;
+		this.setController(controller);
 		windowPanel = new FirstPanel(controller); 
 		
 		setup();
@@ -26,5 +30,15 @@ public class FirstFrame extends JFrame
 		this.setTitle("Window");
 		this.setSize(new Dimension(500,500));
 		this.setVisible(true);
+	}
+
+	public GraphicsController getController()
+	{
+		return controller;
+	}
+
+	public void setController(GraphicsController controller)
+	{
+		this.controller = controller;
 	}
 }

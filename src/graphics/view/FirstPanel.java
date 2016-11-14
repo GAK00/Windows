@@ -85,7 +85,7 @@ public class FirstPanel extends JPanel
 		
 	}
 	private void colorButtonClicked(){
-		if(hexInput.getText().equals("")){
+		if(hexInput.getText().equals("")||hexInput.getText().equals("#")){
 			this.setBackground(Color.WHITE);
 		}
 		else{
